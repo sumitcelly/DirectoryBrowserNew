@@ -1,0 +1,45 @@
+﻿<div>
+
+	<!--<form data-bind="submit: search">-->
+	<fieldset>
+		<legend>Uploader</legend>
+		<input type="file" id="filechooser" />
+		<button type="button" data-bind="click: uploadFile">Upload Now!</button>
+	</fieldset>
+	<p></p>
+
+	Parent Folder:<b><span data-bind="text: parentFolder"></span></b>
+	<p></p>
+	<fieldset>
+		<legend>Search</legend>
+		<input type="text" data-bind="value: searchData" />
+		<button type="button" data-bind="click:search">Search</button>
+		<!--</form>-->
+	</fieldset>
+	<p></p>
+	<fieldset>
+		<legend>Browse...</legend>
+		<b>Status: <span data-bind="text: LoadingStatus"></span></b>
+		<br /><br />
+		Total objects:<span data-bind="text: files().length"></span>
+		<br /><br />
+
+		<a href="#" data-bind="click:goHome">Go Home!</a>&nbsp;
+		<a href="#" data-bind="click: browseUp">Go Up!</a>
+		<p></p>
+		<table border="1">
+			<tr><th>File Name</th><th>File Type</th><th>Size(kb)</th><th>Files in Folder</th><th data-bind="visible: searchMode">Path</th><th></th></tr>
+			<tbody data-bind="foreach: files">
+				<tr>
+					<td data-bind="text: FileName"></td>
+					<td data-bind="text: FileType"></td>
+					<td data-bind="text: FileSize"></td>
+					<td data-bind="text: ChildFileCount"></td>
+					<td data-bind="text: FileRelativePath, visible: $parent.searchMode"></td>
+					<td><a href="#" data-bind="click: $root.browseFurther,text: $parent.drillButtonText( $data )">Download / Drill Further</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+</div>
+

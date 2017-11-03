@@ -1,0 +1,6 @@
+C:\temp\CherwellProjects\DirectoryBrowser\TestProject\FileSystemAccess\bin\Debug\FileSystemAccess.dll
+C:\temp\CherwellProjects\DirectoryBrowser\TestProject\FileSystemAccess\bin\Debug\FileSystemAccess.pdb
+C:\temp\CherwellProjects\DirectoryBrowser\TestProject\FileSystemAccess\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\temp\CherwellProjects\DirectoryBrowser\TestProject\FileSystemAccess\obj\Debug\FileSystemAccess.csprojResolveAssemblyReference.cache
+C:\temp\CherwellProjects\DirectoryBrowser\TestProject\FileSystemAccess\obj\Debug\FileSystemAccess.dll
+C:\temp\CherwellProjects\DirectoryBrowser\TestProject\FileSystemAccess\obj\Debug\FileSystemAccess.pdb
